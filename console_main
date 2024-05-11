@@ -1,0 +1,292 @@
+ВНИМАНИЕ!!! Вывод первых строк DF для проверки: 
+   Total_Casualties  ...           Factor_Name
+0                 1  ...  Сведения отсутствуют
+1                 1  ...  Сведения отсутствуют
+2                 1  ...  Сведения отсутствуют
+3                 1  ...  Сведения отсутствуют
+4                 1  ...  Сведения отсутствуют
+
+[5 rows x 12 columns]
+ВНИМАНИЕ!!! Вывод метрик для РЕГРЕССИИ:
+R^2 на тестовом наборе данных: 0.9708141383885885
+Средняя абсолютная ошибка на тестовом наборе данных: 0.03108669724444161
+Среднеквадратическая ошибка на тестовом наборе данных: 0.028640010574742237
+ВНИМАНИЕ!!! Вывод первых строк DF для проверки: 
+   Alcohol_Intoxication_Degree  ...                     Ownership_Form
+0                            0  ...                    Физические лица
+1                            0  ...                    Физические лица
+2                           10  ...                    Физические лица
+3                           10  ...                    Физические лица
+4                            0  ...  Прочие некоммерческие организации
+
+[5 rows x 8 columns]
+ВНИМАНИЕ!!! Вывод метрик для КЛАСТЕРИЗАЦИИ
+Индекс силуэта: 0.647314338603977
+Критерий Дэвиса-Болдуина: 0.4995983303109761
+ВНИМАНИЕ!!! Вывод статистики по каждому кластеру
+        Gender         ...                                     Model     
+         count unique  ...                                       top freq
+Cluster                ...                                               
+0           67      1  ...  Прочие марки ТС Прочие марки и модели ТС   10
+1          230      1  ...  Прочие марки ТС Прочие марки и модели ТС   46
+2          156      1  ...                                HONDA CR-V   14
+3           60      1  ...                              NISSAN Sunny    5
+
+[4 rows x 8 columns]
+ВНИМАНИЕ!!! Вывод средних значений признаков для каждого кластера
+
+Количество мужчин и женщин в каждом кластере:
+Gender   жен  муж
+Cluster          
+0         67    0
+1          0  230
+2          0  156
+3         60    0
+
+ВНИМАНИЕ!!! Вывод распределения типа ТС
+Распределение типов ТС в кластере 'Прочие марки и модели ТС':
+Vehicle_Type
+В-класс (малый) до 3,9 м                                      33
+С-класс (малый средний, компактный) до 4,3 м                  11
+Минивэны и универсалы \nповышенной вместимости                 5
+Бортовые грузовые автомобили                                   4
+Полуприцепы прочие                                             2
+Мотоциклы                                                      2
+Минивэны и универсалы повышенной вместимости                   2
+С-класс (малый средний, \nкомпактный) до 4,3 м                 1
+Седельные тягачи                                               1
+Одноэтажные длиной от 5 до 8 м                                 1
+Мопеды с двигателем внутреннего сгорания менее 50 см. куб.     1
+Прицепы прочие                                                 1
+Прочие легковые автомобили                                     1
+Подвижной состав ж/д                                           1
+Иные мототранспортные средства                                 1
+Name: count, dtype: int64
+
+ВНИМАНИЕ!!! Вывод данных о ТС в кластере 'Прочие марки и модели ТС': 
+     Alcohol_Intoxication_Degree  ... Cluster
+25                             0  ...       1
+28                             8  ...       1
+91                            88  ...       1
+93                             0  ...       1
+95                             0  ...       1
+97                             0  ...       1
+99                             0  ...       1
+190                           10  ...       1
+191                            0  ...       1
+205                           18  ...       1
+214                            0  ...       0
+215                            0  ...       0
+216                           10  ...       1
+229                           42  ...       1
+254                            0  ...       1
+257                           13  ...       1
+290                           10  ...       1
+292                            0  ...       0
+294                           17  ...       1
+341                            0  ...       1
+345                            0  ...       0
+349                            0  ...       1
+353                            0  ...       1
+357                           10  ...       1
+362                            5  ...       1
+380                            0  ...       1
+381                           10  ...       1
+392                            0  ...       1
+393                            8  ...       1
+396                            0  ...       1
+397                            0  ...       1
+398                           10  ...       1
+412                           24  ...       1
+416                            0  ...       0
+418                            0  ...       0
+420                           10  ...       1
+425                            0  ...       1
+426                            0  ...       1
+427                           31  ...       0
+428                           31  ...       0
+435                           20  ...       1
+437                            0  ...       1
+439                            0  ...       1
+442                            0  ...       0
+445                            8  ...       1
+448                            0  ...       1
+458                            0  ...       1
+459                            0  ...       1
+461                           10  ...       1
+462                           10  ...       1
+463                           23  ...       1
+472                           30  ...       1
+474                            0  ...       0
+495                           36  ...       1
+509                            0  ...       1
+511                           88  ...       1
+
+[56 rows x 9 columns]
+ВНИМАНИЕ!!! Вывод метрик для SVM: 
+Accuracy: 0.9824561403508771
+Precision: 1.0
+Recall: 0.9692307692307692
+F1 Score: 0.984375
+
+ВНИМАНИЕ!!! Происходит проверка пропущенных значений для ЛЕСА
+Accident_Type                             0
+Vehicle_Count                             0
+Participant_Count                         0
+Street_Category                           0
+Technical_Faults                          0
+Model                                    48
+Alcohol_Intoxication_Degree               0
+Participant_Category                      0
+Traffic_Violations                        0
+Severity_of_Consequences                  0
+Road_Condition                            0
+Driving_Experience                      215
+Deficiency_Name                           0
+Factor_Name                               0
+Weather_Condition_Дождь                   0
+Weather_Condition_Облачно                 0
+Weather_Condition_Пасмурно                0
+Weather_Condition_Пасмурно\nСнегопад      0
+Weather_Condition_Снегопад                0
+Weather_Condition_Туман                   0
+Weather_Condition_Ясно                    0
+dtype: int64
+
+ВНИМАНИЕ!!! Вывод формы массива вероятностей классов
+Форма y_probs: (147,)
+
+ВНИМАНИЕ!!! Вывод метрик
+Полнота (Recall): 0.7006802721088435
+Точность (Precision): 0.8071554547745025
+F1-мера: 0.723660724488624
+
+ВНИМАНИЕ!!! Вывод значимости признаков: 
+                                Feature  Importance
+1                    Driving_Experience    0.456921
+0           Alcohol_Intoxication_Degree    0.277016
+2                      Technical_Faults    0.082842
+9                Weather_Condition_Ясно    0.039926
+5            Weather_Condition_Пасмурно    0.036680
+3               Weather_Condition_Дождь    0.032552
+7            Weather_Condition_Снегопад    0.026478
+4             Weather_Condition_Облачно    0.023299
+8               Weather_Condition_Туман    0.018610
+6  Weather_Condition_Пасмурно\nСнегопад    0.005676
+
+ВНИМАНИЕ!!! Вывод значимости признаков: 
+                                Feature  Importance
+1                    Driving_Experience    0.456921
+0           Alcohol_Intoxication_Degree    0.277016
+2                      Technical_Faults    0.082842
+9                Weather_Condition_Ясно    0.039926
+5            Weather_Condition_Пасмурно    0.036680
+3               Weather_Condition_Дождь    0.032552
+7            Weather_Condition_Снегопад    0.026478
+4             Weather_Condition_Облачно    0.023299
+8               Weather_Condition_Туман    0.018610
+6  Weather_Condition_Пасмурно\nСнегопад    0.005676
+
+ВНИМАНИЕ!!! Вывод значимости признаков: 
+                                Feature  Importance
+1                    Driving_Experience    0.456921
+0           Alcohol_Intoxication_Degree    0.277016
+2                      Technical_Faults    0.082842
+9                Weather_Condition_Ясно    0.039926
+5            Weather_Condition_Пасмурно    0.036680
+3               Weather_Condition_Дождь    0.032552
+7            Weather_Condition_Снегопад    0.026478
+4             Weather_Condition_Облачно    0.023299
+8               Weather_Condition_Туман    0.018610
+6  Weather_Condition_Пасмурно\nСнегопад    0.005676
+
+ВНИМАНИЕ!!! Вывод значимости признаков: 
+                                Feature  Importance
+1                    Driving_Experience    0.456921
+0           Alcohol_Intoxication_Degree    0.277016
+2                      Technical_Faults    0.082842
+9                Weather_Condition_Ясно    0.039926
+5            Weather_Condition_Пасмурно    0.036680
+3               Weather_Condition_Дождь    0.032552
+7            Weather_Condition_Снегопад    0.026478
+4             Weather_Condition_Облачно    0.023299
+8               Weather_Condition_Туман    0.018610
+6  Weather_Condition_Пасмурно\nСнегопад    0.005676
+
+ВНИМАНИЕ!!! Вывод значимости признаков: 
+                                Feature  Importance
+1                    Driving_Experience    0.456921
+0           Alcohol_Intoxication_Degree    0.277016
+2                      Technical_Faults    0.082842
+9                Weather_Condition_Ясно    0.039926
+5            Weather_Condition_Пасмурно    0.036680
+3               Weather_Condition_Дождь    0.032552
+7            Weather_Condition_Снегопад    0.026478
+4             Weather_Condition_Облачно    0.023299
+8               Weather_Condition_Туман    0.018610
+6  Weather_Condition_Пасмурно\nСнегопад    0.005676
+
+ВНИМАНИЕ!!! Вывод значимости признаков: 
+                                Feature  Importance
+1                    Driving_Experience    0.456921
+0           Alcohol_Intoxication_Degree    0.277016
+2                      Technical_Faults    0.082842
+9                Weather_Condition_Ясно    0.039926
+5            Weather_Condition_Пасмурно    0.036680
+3               Weather_Condition_Дождь    0.032552
+7            Weather_Condition_Снегопад    0.026478
+4             Weather_Condition_Облачно    0.023299
+8               Weather_Condition_Туман    0.018610
+6  Weather_Condition_Пасмурно\nСнегопад    0.005676
+
+ВНИМАНИЕ!!! Вывод значимости признаков: 
+                                Feature  Importance
+1                    Driving_Experience    0.456921
+0           Alcohol_Intoxication_Degree    0.277016
+2                      Technical_Faults    0.082842
+9                Weather_Condition_Ясно    0.039926
+5            Weather_Condition_Пасмурно    0.036680
+3               Weather_Condition_Дождь    0.032552
+7            Weather_Condition_Снегопад    0.026478
+4             Weather_Condition_Облачно    0.023299
+8               Weather_Condition_Туман    0.018610
+6  Weather_Condition_Пасмурно\nСнегопад    0.005676
+
+ВНИМАНИЕ!!! Вывод значимости признаков: 
+                                Feature  Importance
+1                    Driving_Experience    0.456921
+0           Alcohol_Intoxication_Degree    0.277016
+2                      Technical_Faults    0.082842
+9                Weather_Condition_Ясно    0.039926
+5            Weather_Condition_Пасмурно    0.036680
+3               Weather_Condition_Дождь    0.032552
+7            Weather_Condition_Снегопад    0.026478
+4             Weather_Condition_Облачно    0.023299
+8               Weather_Condition_Туман    0.018610
+6  Weather_Condition_Пасмурно\nСнегопад    0.005676
+
+ВНИМАНИЕ!!! Вывод значимости признаков: 
+                                Feature  Importance
+1                    Driving_Experience    0.456921
+0           Alcohol_Intoxication_Degree    0.277016
+2                      Technical_Faults    0.082842
+9                Weather_Condition_Ясно    0.039926
+5            Weather_Condition_Пасмурно    0.036680
+3               Weather_Condition_Дождь    0.032552
+7            Weather_Condition_Снегопад    0.026478
+4             Weather_Condition_Облачно    0.023299
+8               Weather_Condition_Туман    0.018610
+6  Weather_Condition_Пасмурно\nСнегопад    0.005676
+
+ВНИМАНИЕ!!! Вывод значимости признаков: 
+                                Feature  Importance
+1                    Driving_Experience    0.456921
+0           Alcohol_Intoxication_Degree    0.277016
+2                      Technical_Faults    0.082842
+9                Weather_Condition_Ясно    0.039926
+5            Weather_Condition_Пасмурно    0.036680
+3               Weather_Condition_Дождь    0.032552
+7            Weather_Condition_Снегопад    0.026478
+4             Weather_Condition_Облачно    0.023299
+8               Weather_Condition_Туман    0.018610
+6  Weather_Condition_Пасмурно\nСнегопад    0.005676
